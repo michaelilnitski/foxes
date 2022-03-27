@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Wild Foxes</title>
+</head>
+
+
+
+
+<body>
+
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+      </nav>
+  </header>
+
+
+    <main>
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+          <img src="winter-fox.JPG" class="img-fluid">
+      </div>
+      
+  </main>
+
+    <div id="backgroundColor" class="container">
+            <h2>Latest Posts</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="Otocyon_megalotis_-_Etosha_2014.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="cardTitel1" class="card-title">African Fox</h5>
+                        <p class="card-text">Bar-eared fox, cape fox, Fennec - read about the fascinating world of african foxes. </p>
+                        <button id="backgroundBtn1" class="btn btn-success">Read more</button>
+                    </div>
+                </div>    
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="red-fox-g9edf25e34_1920.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="cardTitle2">European Fox</h5>
+                        <p class="card-text">Foxes have been stealing our leftovers for 42,000 years!</p>
+                        <button id="backgroundBtn2" class="btn btn-warning">Read more</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img id="fox1" src="iceland-g95b1620b9_1920.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="cardTitle3">Arctic Fox</h5>
+                        <p class="card-text">The Best guide to the actic fox in Iceland. </p>
+                        <button id="backgroundBtn3" onclick="imgClickChange()" class="btn btn-dark">Read more</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="karen-m9oQ1C_--EE-unsplash.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="cardTitle4">Fox</h5>
+                      <p class="card-text">It's a fox. </p>
+                      <button id="backgroundBtn4" class="btn btn-light">Click here</a>
+                  </div>
+              </div>    
+          </div>
+          <div id="videoDiv">
+            <iframe id="videoFrame" src="https://www.ardmediathek.de/video/unser-land/fuechse-toeten-wiesenbrueter/br-fernsehen/Y3JpZDovL2JyLmRlL3ZpZGVvL2Q3YWYxNDMwLTNhMmQtNDc1OS1iMjM3LThiZGFmZmY3NGE4Yg" width="1300" height="600" title="Fox"></iframe>
+            <button id="backgroundBtn5" onclick="Test1Function()" class="btn btn-danger">Hide iframe</a>
+            <button id="backgroundBtn6" onclick="Test2Function()" class="btn btn-primary">Show iframe</a>
+          </div>
+        </div>  
+    </div>
+  
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
+      </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+
+
+
+</html>
