@@ -7,33 +7,22 @@ document.getElementById("backgroundBtn1").addEventListener("click",function() {
     /*document.getElementById("backgroundColor").style.backgroundColor="red" */
 } )
 
-document.getElementById("closeModal").addEventListener("click",function() {
-    console.log("button clicked")
-    document.getElementById("pastaTitel").style.display="none"
-
-} )
-function imgClickChange() {
- if (document.getElementById("fox1").src == "iceland-g95b1620b9_1920.jpg") 
-{
-    document.getElementById("fox1").src = "iceland-g95b1620b9_1920.jpg";
-  }
-else 
-{
-     document.getElementById("fox1").src = "howling-red-OU2vFQCwCD0-unsplash.jpg";
- }
-}
-/*
-function imgClickChange() {
-    if (document.getElementById("fox1").src == "howling-red-OU2vFQCwCD0-unsplash.jpg") 
-   {
-       document.getElementById("fox1").src = "howling-red-OU2vFQCwCD0-unsplash.jpg";
+document.getElementById("backgroundBtn3").addEventListener("click",function() {
+    console.log("clicking the button")
+    console.log(document.getElementById("fox1").src)
+    if (document.getElementById("fox1").src == "http://127.0.0.1:5500/iceland-g95b1620b9_1920.jpg") 
+    {
+        console.log("images are the same")
+        document.getElementById("fox1").src = "http://127.0.0.1:5500/howling-red-OU2vFQCwCD0-unsplash.jpg";
+      }
+    else 
+    {
+        console.log("images are different")
+         document.getElementById("fox1").src = "http://127.0.0.1:5500/iceland-g95b1620b9_1920.jpg";
      }
-   else 
-   {
-        document.getElementById("fox1").src = "iceland-g95b1620b9_1920.jpg";
-    }
-   }
-*/
+} )
+
+
 
 
 function Test1Function() {
